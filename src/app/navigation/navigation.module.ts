@@ -4,8 +4,7 @@ import { OrderedComponent, ComponentsOutletModule, COMPONENTS_OUTLET_CONFIG } fr
 
 import { isArray } from 'lodash';
 export function provideNavigationItems(navigationItems?: OrderedComponent[]): Provider {
-  if (!navigationItems) return [];
-  //if (!isArray(navigationItems)) navigationItems = [navigationItems];
+  // let multi = true;
 
   return {
     provide: COMPONENTS_OUTLET_CONFIG,
